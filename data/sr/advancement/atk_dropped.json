@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "click_item":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"dropped_item\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sr:dropped_item/pick_item"
+    }
+}

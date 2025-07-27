@@ -1,0 +1,1 @@
+loot insert ~ ~ ~ loot sr:loot_item

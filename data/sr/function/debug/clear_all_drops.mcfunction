@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=dropped_item] run function sr:dropped_item/clear

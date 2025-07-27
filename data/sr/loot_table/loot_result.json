@@ -1,0 +1,45 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/ammo",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/battery",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/food",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/key",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/med",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/notes",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/rubbish",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

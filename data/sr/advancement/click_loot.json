@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "click_chest": {
+            "trigger": "any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "trapped_chest"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sr:loot/player_click"
+    }
+}

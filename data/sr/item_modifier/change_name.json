@@ -1,0 +1,9 @@
+{
+    "function": "set_components",
+    "components": {
+        "custom_data": "{is_looting:1b}",
+        "item_name": [{"text": "搜索中..."}],
+        "item_model": "minecraft:nether_brick",
+        "max_stack_size": 1
+    }
+}

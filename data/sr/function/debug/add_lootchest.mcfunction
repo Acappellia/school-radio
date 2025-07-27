@@ -1,0 +1,1 @@
+setblock ~ ~ ~ trapped_chest{LootTable:"sr:backpack_demo"}
