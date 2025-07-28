@@ -26,7 +26,7 @@ tag @s remove firing
 
 scoreboard players remove @s p_ammo_ingun 1
 
-execute store result score @s p_bammo_shotgun run clear @s brick[custom_data~{is_ammo:1b}] 0
-execute if score @s p_bammo_shotgun matches 1.. run function sr:shotgun/reload_auto
+#execute store result score @s p_bammo_shotgun run clear @s brick[custom_data~{is_ammo:1b}] 0
+#execute if score @s p_bammo_shotgun matches 1.. run function sr:shotgun/reload_auto
 
 scoreboard players set @s p_fire_cd -24

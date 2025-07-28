@@ -10,3 +10,7 @@ execute as @a[tag=radio_tuning] at @s run function sr:radio/tuning_tick
 execute as @a[scores={p_recoil_time=..-1}] at @s run function sr:shotgun/recoil/check_type
 execute as @a[scores={p_shotgun_bolt=-7}] at @s run function sr:shotgun/shotgun_bolt
 execute as @a[scores={p_shotgun_bolt=-1}] at @s run function sr:shotgun/shotgun_bolt2
+
+execute as @a run function sr:game/safehouse_tick
+
+execute if score #game_daytime sr matches 1 run function sr:game/day_tick
