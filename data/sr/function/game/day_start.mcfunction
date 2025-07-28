@@ -6,8 +6,10 @@ scoreboard players set #game_daytime sr 1
 
 #TODO refresh nagi
 
+effect clear @a
 execute as @a run function sr:game/consume_food
 scoreboard players operation #game_total_food sr -= #food_eat_today sr
+execute if score #game_total_food sr matches ..-1 run function sr:game/day_starve
 function sr:game/title/show
 
 difficulty hard

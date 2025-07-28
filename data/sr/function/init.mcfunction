@@ -20,6 +20,7 @@ scoreboard objectives add sr dummy
 
 scoreboard players set #-1 sr -1
 scoreboard players set #2 sr 2
+scoreboard players set #3 sr 3
 scoreboard players set #4 sr 4
 scoreboard players set #8 sr 8
 scoreboard players set #12 sr 12
