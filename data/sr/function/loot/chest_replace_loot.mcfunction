@@ -1,5 +1,6 @@
 setblock 0 -64 0 shulker_box
-loot insert 0 -64 0 loot sr:loot_result
+loot insert 0 -64 0 loot sr:loot_f4
+#TODO change loottable according to floor
 $item replace block ~ ~ ~ container.$(slot) from block 0 -64 0 container.0
 setblock 0 -64 0 bedrock
 

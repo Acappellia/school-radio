@@ -3,7 +3,7 @@
     "components": {
         "custom_data": "{is_looting:1b}",
         "item_name": [{"text": "搜索中..."}],
-        "item_model": "minecraft:nether_brick",
+        "item_model": "minecraft:searching",
         "max_stack_size": 1
     }
 }

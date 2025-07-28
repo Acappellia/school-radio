@@ -1,4 +1,5 @@
 setblock ~ ~ ~ air
+kill @n[type=interaction,tag=chest_lock,distance=..1]
 
 execute if entity @s[tag=backpack_1] run function sr:debug/add_chest/backpack_1
 execute if entity @s[tag=backpack_2] run function sr:debug/add_chest/backpack_2

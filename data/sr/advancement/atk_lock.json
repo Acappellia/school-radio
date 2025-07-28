@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "click_item":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"chest_lock\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sr:loot/click_lock"
+    }
+}

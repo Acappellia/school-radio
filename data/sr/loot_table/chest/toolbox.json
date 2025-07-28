@@ -13,7 +13,8 @@
                             "components": {
                                 "custom_data": "{is_looting:1b}",
                                 "item_name": [{"text": "未知物品"}],
-                                "max_stack_size": 1
+                                "max_stack_size": 1,
+                                "item_model": "minecraft:unknown"
                             }
                         }
                     ]

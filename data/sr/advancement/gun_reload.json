@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "reload":{
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "sr:shotgun/trigger_reload"
+    }
+}

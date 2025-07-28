@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "reload":{
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": "wooden_pickaxe",
+                    "predicates": {
+                        "custom_data": "{is_gun:1b}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sr:shotgun/shotgun_fire"
+    }
+}
