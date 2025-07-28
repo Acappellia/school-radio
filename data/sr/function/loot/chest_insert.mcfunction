@@ -1,1 +1,1 @@
-loot insert ~ ~ ~ loot sr:loot_item
+$loot insert $(x) $(y) $(z) loot sr:loot_item

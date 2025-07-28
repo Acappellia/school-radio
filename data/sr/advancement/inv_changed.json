@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "inv_changed":{
+            "trigger": "inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "sr:loot/inv_changed"
+    }
+}
