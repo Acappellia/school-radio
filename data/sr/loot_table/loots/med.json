@@ -85,7 +85,7 @@
                                 "item_name": "应急医疗包",
                                 "lore":[{"text": "使用回复全部生命","color": "gray","italic": false},"",{"text": "重量 16","color": "dark_gray","italic": false}],
                                 "consumable": {
-                                    "consume_seconds": 4,
+                                    "consume_seconds": 10,
                                     "animation": "drink",
                                     "has_consume_particles": false,
                                     "on_consume_effects": [

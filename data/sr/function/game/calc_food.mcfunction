@@ -5,4 +5,4 @@ scoreboard players operation #food_get_today sr += #clear_result sr
 
 clear @s *[custom_data~{is_food:1b}]
 
-effect give @s saturation 1 127 true
+effect give @s saturation 1 9 true

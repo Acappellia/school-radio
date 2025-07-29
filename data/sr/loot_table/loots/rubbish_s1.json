@@ -19,7 +19,7 @@
                                     "",
                                     {"text": "重量 2","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash01",
+                                "item_model": "trash1",
                                 "max_stack_size": 1
                             }
                         }
@@ -40,7 +40,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash02",
+                                "item_model": "trash2",
                                 "max_stack_size": 1
                             }
                         }
@@ -61,7 +61,7 @@
                                     "",
                                     {"text": "重量 4","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash03",
+                                "item_model": "trash3",
                                 "max_stack_size": 1
                             }
                         }
@@ -82,7 +82,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash04",
+                                "item_model": "trash4",
                                 "max_stack_size": 1
                             }
                         }
@@ -103,7 +103,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash05",
+                                "item_model": "trash5",
                                 "max_stack_size": 1
                             }
                         }
@@ -124,7 +124,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash06",
+                                "item_model": "trash6",
                                 "max_stack_size": 1
                             }
                         }
@@ -145,7 +145,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash07",
+                                "item_model": "trash7",
                                 "max_stack_size": 1
                             }
                         }
@@ -166,7 +166,7 @@
                                     "",
                                     {"text": "重量 1","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash08",
+                                "item_model": "trash8",
                                 "max_stack_size": 1
                             }
                         }
@@ -187,7 +187,7 @@
                                     "",
                                     {"text": "重量 4","color": "dark_gray","italic": false}
                                 ],
-                                "item_model": "trash09",
+                                "item_model": "trash9",
                                 "max_stack_size": 1
                             }
                         }

@@ -2,7 +2,7 @@
     "type": "chest",
     "pools": [
         {
-            "rolls": 3,
+            "rolls": 4,
             "entries": [
                 {
                     "type": "item",

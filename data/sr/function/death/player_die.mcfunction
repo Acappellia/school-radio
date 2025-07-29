@@ -1,5 +1,5 @@
 tag @s remove searcher
-#tag @s add dead
+tag @s add dead
 setblock 0 -64 0 shulker_box
 setblock 0 -63 0 shulker_box
 loot insert 0 -64 0 loot sr:dead_tag

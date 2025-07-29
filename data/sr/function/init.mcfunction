@@ -24,6 +24,7 @@ scoreboard players set #-1 sr -1
 scoreboard players set #2 sr 2
 scoreboard players set #3 sr 3
 scoreboard players set #4 sr 4
+scoreboard players set #6 sr 6
 scoreboard players set #8 sr 8
 scoreboard players set #12 sr 12
 scoreboard players set #16 sr 16
@@ -54,6 +55,8 @@ scoreboard objectives add p_inv_sound_cd custom:time_since_death
 
 fill -1 -64 -1 1 -62 1 bedrock
 forceload add 0 0 0 0
+
+worldborder set 2000
 
 schedule function sr:3gt_tick 3t append
 

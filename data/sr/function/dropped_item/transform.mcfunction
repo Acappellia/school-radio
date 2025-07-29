@@ -2,5 +2,6 @@ summon item_display ~ ~ ~ {Passengers:[{id:"interaction",width:0.3,height:0.1,Ta
 data modify entity @n[type=item_display,tag=new_dropped,distance=..1] item set from entity @s Item
 data modify entity @n[type=item_display,tag=new_dropped,distance=..1] Rotation set from entity @s Rotation
 execute if data entity @s Item.components."minecraft:custom_data".is_playertag run tag @n[type=item_display,tag=new_dropped,distance=..1] add player_tag
+execute if data entity @s Item.components."minecraft:custom_data".is_food run tag @n[type=item_display,tag=new_dropped,distance=..1] add dropped_food
 tag @n[type=item_display,tag=new_dropped,distance=..1] remove new_dropped
 kill @s

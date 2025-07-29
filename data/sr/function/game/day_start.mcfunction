@@ -5,13 +5,15 @@ gamerule doDaylightCycle true
 
 scoreboard players add #game_date sr 1
 scoreboard players set #game_daytime sr 1
+scoreboard players set #gunshot_fired sr 0
 
 #TODO refresh nagi
 
 effect clear @a
 execute as @a run function sr:game/consume_food
+execute if score #game_total_food sr matches ..0 run function sr:game/day_starve
 scoreboard players operation #game_total_food sr -= #food_eat_today sr
-execute if score #game_total_food sr matches ..-1 run function sr:game/day_starve
+execute if score #game_total_food sr matches ..-1 run scoreboard players set #game_total_food sr 0
 function sr:game/title/show
 
 difficulty normal

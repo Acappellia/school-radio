@@ -32,7 +32,7 @@
                 {
                     "type": "loot_table",
                     "value": "sr:loots/rubbish_s1",
-                    "weight": 50
+                    "weight": 80
                 },
                 {
                     "type": "loot_table",

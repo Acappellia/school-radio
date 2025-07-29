@@ -28,6 +28,8 @@ tag @s remove firing
 scoreboard players remove @s p_ammo_ingun 1
 
 execute as @e[tag=enemy] run function sr:mob/update_follow_range
+execute if score #gunshot_fired sr matches 0 as @a at @s run playsound entity.enderman.stare player @s ~ ~ ~ 1 1.5
+scoreboard players set #gunshot_fired sr 1
 
 #execute store result score @s p_bammo_shotgun run clear @s brick[custom_data~{is_ammo:1b}] 0
 #execute if score @s p_bammo_shotgun matches 1.. run function sr:shotgun/reload_auto
