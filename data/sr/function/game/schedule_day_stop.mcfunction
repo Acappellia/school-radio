@@ -1,6 +1,4 @@
-execute if score #game_daytime sr matches 0 run return run advancement revoke @s only sr:click_day_stop
-
 title @a times 10 10 10
-title @a title "blackscreen"
+title @a title "\uea00"
 
 schedule function sr:game/day_end 15t replace

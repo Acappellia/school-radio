@@ -5,12 +5,17 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"day_start\"]}"
+                    "nbt": "{Tags:[\"day_next\"]}"
+                },
+                "player": {
+                    "flags": {
+                        "is_sneaking": true
+                    }
                 }
             }
         }
     },
     "rewards": {
-        "function": "sr:game/schedule_day_start"
+        "function": "sr:game/click_day_next"
     }
 }

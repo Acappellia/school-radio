@@ -1,0 +1,1 @@
+execute as @a at @s if predicate sr:noice_chance run particle firefly ~ ~ ~ 2 2 2 0 1

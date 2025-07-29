@@ -6,8 +6,8 @@ execute unless data storage ps:ani available run data modify storage ps:ani avai
 
 #init animation data
 data remove storage ps:ani_data data
-function ps:ani_data/coin_0_head
-function ps:ani_data/boss_16_wait_idle
+function ps:ani_data/nagi_0_sit_on_desk
+function ps:ani_data/nagi_1_rock_the_chair
 
 ## 动画机构造
 # 预设好每个动画的模型和各帧的变换矩阵, 对应到 ani_id

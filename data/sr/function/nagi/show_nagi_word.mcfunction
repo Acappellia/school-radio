@@ -1,0 +1,4 @@
+$execute if score #game_stage sr matches 1 run tellraw @a [{text:"<nagi> ",color:"white"},{nbt:"messages.stage_one.nagi_dialogue[$(index)]",storage:"sr:radio",interpret:true,color:"#78bfe2"}]
+$execute if score #game_stage sr matches 2 run tellraw @a [{text:"<nagi> ",color:"white"},{nbt:"messages.stage_two.nagi_dialogue[$(index)]",storage:"sr:radio",interpret:true,color:"#78bfe2"}]
+$execute if score #game_stage sr matches 3 run tellraw @a [{text:"<nagi> ",color:"white"},{nbt:"messages.stage_three.nagi_dialogue[$(index)]",storage:"sr:radio",interpret:true,color:"#78bfe2"}]
+$execute if score #game_stage sr matches 4 run tellraw @a [{text:"<nagi> ",color:"white"},{nbt:"messages.stage_four.nagi_dialogue[$(index)]",storage:"sr:radio",interpret:true,color:"#78bfe2"}]

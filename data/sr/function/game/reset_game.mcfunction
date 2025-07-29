@@ -1,6 +1,6 @@
-#forceload add 1 1 1 1
-
 worldborder warning distance 10
+
+time set 13500
 
 function sr:debug/reset_chest
 function sr:debug/clear_all_drops
@@ -36,10 +36,12 @@ tag @a remove dead
 data modify entity @n[type=text_display,tag=bb_text_base_clue] text.text set value ""
 data modify entity @n[type=text_display,tag=bb_text_main_clue] text.text set value ""
 
+data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{score:{name:"#game_total_food",objective:"sr"},color:"white"},{text:" 份",color:"gray"}]
+data modify entity @n[type=text_display,tag=next_button_text] text set value [{text:"躺下睡觉",color:"gray"}]
 
-#TODO tp to spawn
+tp @a -139 19.5 -120
 gamemode adventure @a
+fill -137 20 -109 -138 21 -109 barrier
 
-#TODO reset nagi
-
-#forceload remove 1 1 1 1
+execute as @e[tag=nagi] run function ps:animation/kill
+execute positioned -135.7 13.0 -125.5 rotated -16 0 run function ps:animation/add {ani_id:0}

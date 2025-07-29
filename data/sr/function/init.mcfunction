@@ -48,12 +48,15 @@ scoreboard objectives add p_bammo_shotgun dummy
 scoreboard objectives add p_shotgun_bolt custom:time_since_death
 scoreboard objectives add p_weight dummy
 scoreboard objectives add p_die deathCount
+scoreboard objectives add p_tp_cd dummy
 
 scoreboard objectives add p_checkdie custom:time_since_death
 
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
 
 fill -1 -64 -1 1 -62 1 bedrock
+
+forceload add -180 -157 -50 -50
 forceload add 0 0 0 0
 
 worldborder set 2000
@@ -62,3 +65,5 @@ schedule function sr:3gt_tick 3t append
 
 team add mob_friend
 team modify mob_friend collisionRule always
+
+function ps:animation/init

@@ -1,0 +1,20 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific": {
+            "type": "player",
+            "looking_at": {
+                "type": [
+                    "interaction"
+                ],
+                "nbt": "{Tags:[\"day_next\"]}",
+                "distance": {
+                    "absolute": {
+                        "max": 2
+                    }
+                }
+            }
+        }
+    }
+}

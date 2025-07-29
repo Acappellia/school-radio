@@ -5,12 +5,12 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"day_stop\"]}"
+                    "nbt": "{Tags:[\"nagi\"]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "sr:game/schedule_day_start"
+        "function": "sr:nagi/player_click"
     }
 }

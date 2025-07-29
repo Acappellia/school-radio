@@ -1,5 +1,3 @@
-advancement revoke @a only sr:click_day_stop
-
 time set noon
 gamerule doDaylightCycle true
 
@@ -7,7 +5,7 @@ scoreboard players add #game_date sr 1
 scoreboard players set #game_daytime sr 1
 scoreboard players set #gunshot_fired sr 0
 
-#TODO refresh nagi
+function sr:nagi/reset_nagi
 
 effect clear @a
 execute as @a run function sr:game/consume_food
@@ -18,5 +16,7 @@ function sr:game/title/show
 
 difficulty normal
 function sr:mob/spawn_all_mobs
+fill -137 20 -109 -138 21 -109 air
 
 data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{score:{name:"#game_total_food",objective:"sr"},color:"white"},{text:" 份",color:"gray"}]
+data modify entity @n[type=text_display,tag=next_button_text] text set value [{text:"提前休息",color:"gray"}]

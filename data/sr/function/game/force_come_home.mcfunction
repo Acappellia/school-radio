@@ -55,4 +55,4 @@ execute if score #random_result sr matches 4 run tellraw @s [{text:"> ",color:"g
 
 tellraw @s [{text:"> ",color:"gray"},{"text":"身上的物品全部遗失了…… 以后还是早些回来吧","color":"white"}]
 
-#TODO tp to safehouse
+tp @s -140 13 -130 15 0
