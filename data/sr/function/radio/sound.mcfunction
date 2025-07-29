@@ -1,7 +1,7 @@
 execute unless score @s p_tuning_sound_interval matches 0.. run return 0
 
 playsound block.fire.extinguish player @a ~ ~ ~ 0.2 0.6
-scoreboard players set @s p_tuning_sound_interval -15
+scoreboard players set @s p_tuning_sound_interval -10
 
 scoreboard players operation #freq_difference sr = #radio_value_1 sr
 scoreboard players operation #freq_difference sr -= #target_freq_1 sr

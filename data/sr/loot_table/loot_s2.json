@@ -7,7 +7,7 @@
                 {
                     "type": "loot_table",
                     "value": "sr:loots/ammo",
-                    "weight": 10
+                    "weight": 5
                 },
                 {
                     "type": "loot_table",
@@ -17,7 +17,7 @@
                 {
                     "type": "loot_table",
                     "value": "sr:loots/food",
-                    "weight": 10
+                    "weight": 20
                 },
                 {
                     "type": "loot_table",
@@ -31,13 +31,13 @@
                 },
                 {
                     "type": "loot_table",
-                    "value": "sr:loots/notes",
-                    "weight": 10
+                    "value": "sr:loots/rubbish_s1",
+                    "weight": 50
                 },
                 {
                     "type": "loot_table",
-                    "value": "sr:loots/rubbish",
-                    "weight": 10
+                    "value": "sr:loots/weapon",
+                    "weight": 5
                 }
             ]
         }

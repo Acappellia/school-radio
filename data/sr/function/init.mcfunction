@@ -16,6 +16,7 @@ gamerule doVinesSpread false
 gamerule naturalRegeneration false
 gamerule tntExplodes false
 #gamerule reducedDebugInfo true
+gamerule locatorBar false
 
 scoreboard objectives add sr dummy
 

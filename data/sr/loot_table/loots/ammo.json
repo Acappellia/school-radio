@@ -11,16 +11,18 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_ammo:1b}",
-                                "item_name": "弹药！",
-                                "item_model": "iron_nugget"
+                                "custom_data": "{is_ammo:1b,weight:1}",
+                                "item_name": "独头鹿弹",
+                                "lore":[{"text": "应该是给枪用的","color": "gray","italic": false},"",{"text": "重量 1","color": "dark_gray","italic": false}],
+                                "item_model": "armo",
+                                "max_stack_size": 8
                             }
                         },
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 3,
-                                "max": 5
+                                "max": 2,
+                                "min": 1
                             }
                         }
                     ]

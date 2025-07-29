@@ -3,7 +3,7 @@ execute store result score @s p_bammo_shotgun run clear @s brick[custom_data~{is
 execute if score @s p_bammo_shotgun matches ..0 run return run function sr:shotgun/return_item
 
 setblock 0 -63 0 shulker_box
-item replace block 0 -63 0 container.0 with minecraft:wooden_pickaxe[attribute_modifiers=[{"id": "gun","type": "attack_speed", "amount": 20, "operation": "add_value","slot": "mainhand","display": {"type": "hidden"}}],item_model="minecraft:gun002",custom_data={is_gun_reload:1},lore=[[{"text": "供弹似乎损坏了，只能装填单发弹药","color": "gray"}],[{"text": "[","color": "gray",italic:false},{"keybind": "key.swapOffhand","color": "yellow",italic:false},{"text": "] 手动装填","color": "gray",italic:false}]],custom_name=[{"text": "猎枪","color": "white","italic": false}]]
+item replace block 0 -63 0 container.0 with minecraft:wooden_pickaxe[attribute_modifiers=[{"id": "gun","type": "attack_speed", "amount": 20, "operation": "add_value","slot": "mainhand","display": {"type": "hidden"}}],item_model="minecraft:gun002",custom_data={is_gun_reload:1b,weight:8},lore=[[{"text": "供弹似乎损坏了，只能装填单发弹药","color": "gray"}],[{"text": "[","color": "gray",italic:false},{"keybind": "key.swapOffhand","color": "yellow",italic:false},{"text": "] 手动装填","color": "gray",italic:false}],"",{"text": "重量 8","color": "dark_gray","italic": false}],custom_name=[{"text": "猎枪","color": "white","italic": false}]]
 
 execute store success score #check_hand sr if data entity @s SelectedItem.count
 execute unless score #check_hand sr matches 1 run item replace entity @s weapon.mainhand from block 0 -63 0 container.0

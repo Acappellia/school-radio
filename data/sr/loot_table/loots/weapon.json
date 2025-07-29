@@ -1,0 +1,225 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_weapon:1b,weight:8}",
+                                "item_name": "棒球棍",
+                                "lore":[{"text": "近战武器","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "attribute_modifiers": [
+                                    {
+                                        "type": "attack_damage",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 2,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "entity_interaction_range",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 2,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "attack_speed",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": -2.4,
+                                        "operation": "add_value",
+                                        "display": {
+                                            "type": "hidden"
+                                        }
+                                    }
+                                ],
+                                "max_damage": 64,
+                                "max_stack_size": 1,
+                                "item_model": "weap01"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_weapon:1b,weight:8}",
+                                "item_name": "一截水管",
+                                "lore":[{"text": "近战武器","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "attribute_modifiers": [
+                                    {
+                                        "type": "attack_damage",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 4,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "entity_interaction_range",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 3,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "attack_speed",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": -3,
+                                        "operation": "add_value",
+                                        "display": {
+                                            "type": "hidden"
+                                        }
+                                    }
+                                ],
+                                "max_damage": 16,
+                                "max_stack_size": 1,
+                                "item_model": "weap02"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_weapon:1b,weight:2}",
+                                "item_name": "弹簧刀",
+                                "lore":[{"text": "近战武器","color": "gray","italic": false},"",{"text": "重量 2","color": "dark_gray","italic": false}],
+                                "attribute_modifiers": [
+                                    {
+                                        "type": "attack_damage",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 8,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "entity_interaction_range",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 1,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "attack_speed",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": -2.4,
+                                        "operation": "add_value",
+                                        "display": {
+                                            "type": "hidden"
+                                        }
+                                    }
+                                ],
+                                "max_damage": 24,
+                                "max_stack_size": 1,
+                                "item_model": "weap03"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_weapon:1b,weight:8}",
+                                "item_name": "网球拍",
+                                "lore":[{"text": "近战武器","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "attribute_modifiers": [
+                                    {
+                                        "type": "attack_damage",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 3,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "entity_interaction_range",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 2,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "attack_speed",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": -3,
+                                        "operation": "add_value",
+                                        "display": {
+                                            "type": "hidden"
+                                        }
+                                    }
+                                ],
+                                "max_damage": 24,
+                                "max_stack_size": 1,
+                                "item_model": "weap04"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_weapon:1b,weight:2}",
+                                "item_name": "水果刀",
+                                "lore":[{"text": "近战武器","color": "gray","italic": false},"",{"text": "重量 2","color": "dark_gray","italic": false}],
+                                "attribute_modifiers": [
+                                    {
+                                        "type": "attack_damage",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 6,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "entity_interaction_range",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": 1,
+                                        "operation": "add_value"
+                                    },
+                                    {
+                                        "type": "attack_speed",
+                                        "id": "sr:melee",
+                                        "slot": "mainhand",
+                                        "amount": -2,
+                                        "operation": "add_value",
+                                        "display": {
+                                            "type": "hidden"
+                                        }
+                                    }
+                                ],
+                                "max_damage": 16,
+                                "max_stack_size": 1,
+                                "item_model": "weap05"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -11,16 +11,13 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_food:1b}",
-                                "item_name": "食物A！",
-                                "item_model": "apple"
-                            }
-                        },
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "饭团",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food01",
+                                "max_stack_size": 1
                             }
                         }
                     ]
@@ -32,16 +29,13 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_food:1b}",
-                                "item_name": "食物B！",
-                                "item_model": "cookie"
-                            }
-                        },
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "面包",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food02",
+                                "max_stack_size": 1
                             }
                         }
                     ]
@@ -53,16 +47,144 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_food:1b}",
-                                "item_name": "食物C！",
-                                "item_model": "potato"
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "能量饮料",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {
+                                    "animation": "drink",
+                                    "consume_seconds": 4.0,
+                                    "has_consume_particles": false,
+                                    "sound": "minecraft:item.honey_bottle.drink"
+                                  },
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food03",
+                                "max_stack_size": 1
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
                         {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "饼干",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food04",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "浓汤罐头",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food05",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "沙丁鱼罐头",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food06",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "压缩饼干",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food07",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "狗粮",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food08",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "便当",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food09",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_food:1b,weight:4}",
+                                "item_name": "巧克力棒",
+                                "lore":[{"text": "食物","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {"consume_seconds": 4},
+                                "food": {"nutrition": 4,"saturation": 2.4},
+                                "item_model": "food10",
+                                "max_stack_size": 1
                             }
                         }
                     ]

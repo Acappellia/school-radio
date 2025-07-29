@@ -11,16 +11,103 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_med:1b}",
-                                "item_name": "止疼药！",
-                                "item_model": "honey_bottle"
+                                "custom_data": "{is_med:1b,weight:4}",
+                                "item_name": "绷带",
+                                "lore":[{"text": "使用回复 4 点生命","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "consumable": {
+                                    "consume_seconds": 4,
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "instant_health",
+                                                    "amplifier": 0,
+                                                    "duration": 1
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sound": "item.book.page_turn"
+                                },
+                                "item_model": "med01",
+                                "max_stack_size": 1
                             }
-                        },
-                        {
-                            "function": "set_count",
-                            "count": 1
                         }
-                    ]
+                    ],
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_med:1b,weight:8}",
+                                "item_name": "止痛药",
+                                "lore":[{"text": "使用回复 8 点生命","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "consumable": {
+                                    "consume_seconds": 4,
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "instant_health",
+                                                    "amplifier": 1,
+                                                    "duration": 1
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sound": "item.book.page_turn"
+                                },
+                                "item_model": "med02",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ],
+                    "weight": 6
+                },
+                {
+                    "type": "item",
+                    "name": "brick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{is_med:1b,weight:16}",
+                                "item_name": "应急医疗包",
+                                "lore":[{"text": "使用回复全部生命","color": "gray","italic": false},"",{"text": "重量 16","color": "dark_gray","italic": false}],
+                                "consumable": {
+                                    "consume_seconds": 4,
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "instant_health",
+                                                    "amplifier": 9,
+                                                    "duration": 1
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sound": "item.book.page_turn"
+                                },
+                                "item_model": "med03",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ],
+                    "weight": 1
                 }
             ]
         }

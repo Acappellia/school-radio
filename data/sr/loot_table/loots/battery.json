@@ -11,14 +11,12 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": "{is_battery:1b}",
-                                "item_name": "电池！",
-                                "item_model": "diamond"
+                                "custom_data": "{is_battery:1b,weight:8}",
+                                "item_name": "电池",
+                                "lore":[{"text": "可以给电台供电","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "item_model": "battery",
+                                "max_stack_size": 1
                             }
-                        },
-                        {
-                            "function": "set_count",
-                            "count": 1
                         }
                     ]
                 }

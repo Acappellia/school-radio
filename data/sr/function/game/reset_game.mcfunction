@@ -3,7 +3,8 @@
 function sr:debug/reset_chest
 function sr:debug/clear_all_drops
 function sr:note/init_radio_note
-function sr:radio/turn_on
+execute at @n[type=item_display,tag=radio_base] run function sr:radio/turn_on
+
 
 execute as @e[type=item_display,tag=lootable,limit=5,sort=random] at @s run function sr:debug/add_chest/chest_decay
 
