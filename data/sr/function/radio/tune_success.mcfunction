@@ -7,3 +7,5 @@ function sr:radio/turn_off
 
 function sr:radio/quit_tunning
 function sr:debug/randomize_target_freq
+
+function sr:note/give_radio_note

@@ -15,6 +15,7 @@ gamerule doWardenSpawning false
 gamerule doVinesSpread false
 gamerule naturalRegeneration false
 gamerule tntExplodes false
+#gamerule reducedDebugInfo true
 
 scoreboard objectives add sr dummy
 
@@ -46,8 +47,6 @@ scoreboard objectives add p_shotgun_bolt custom:time_since_death
 scoreboard objectives add p_weight dummy
 
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
-
-function sr:note/init_note_data
 
 fill -1 -64 -1 1 -62 1 bedrock
 forceload add 0 0 0 0
