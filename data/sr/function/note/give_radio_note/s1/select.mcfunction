@@ -16,3 +16,4 @@ execute if score #game_tune_count sr matches 16..21 run function sr:note/give_ra
 execute if score #game_tune_count sr matches 22.. run function sr:note/give_radio_note/empty
 
 loot give @s mine 0 -64 0 stone[minecraft:custom_data={drop_contents:1}]
+setblock 0 -64 0 bedrock

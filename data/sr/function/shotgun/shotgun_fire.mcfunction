@@ -21,10 +21,13 @@ scoreboard players set @s p_recoil_time -10
 scoreboard players set @s p_shotgun_bolt -20
 
 tag @s add firing
-execute anchored eyes positioned ^-0.3 ^-0.1 ^0.5 run function #bs.raycast:run {with:{ignored_entities:"minecraft:player",ignored_blocks:"#sr:ignore_blocks",entities:"enemy",on_hit_point:"function sr:shotgun/hitblock",on_targeted_entity:"function sr:shotgun/hitentity"}}
+execute anchored eyes positioned ^-0.3 ^-0.1 ^0.5 run function sr:shotgun/shotgun_ray
+tag @s remove hit
 tag @s remove firing
 
 scoreboard players remove @s p_ammo_ingun 1
+
+execute as @e[tag=enemy] run function sr:mob/update_follow_range
 
 #execute store result score @s p_bammo_shotgun run clear @s brick[custom_data~{is_ammo:1b}] 0
 #execute if score @s p_bammo_shotgun matches 1.. run function sr:shotgun/reload_auto

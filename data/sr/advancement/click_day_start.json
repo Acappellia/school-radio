@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "click_item":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"day_start\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sr:game/schedule_day_start"
+    }
+}

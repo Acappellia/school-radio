@@ -1,0 +1,1 @@
+execute summon zombie run function sr:mob/init_mob_zombie

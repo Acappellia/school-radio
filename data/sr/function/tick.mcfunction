@@ -14,3 +14,9 @@ execute as @a[scores={p_shotgun_bolt=-1}] at @s run function sr:shotgun/shotgun_
 execute as @a run function sr:game/safehouse_tick
 
 execute if score #game_daytime sr matches 1 run function sr:game/day_tick
+
+execute as @a[scores={p_die=1..}] at @s run function sr:death/player_die
+
+gamemode spectator @a[tag=dead]
+
+execute as @p[scores={p_checkdie=1}] run function sr:death/check_alldie

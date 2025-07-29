@@ -1,0 +1,1 @@
+$data modify block 0 -64 0 Items[0].components."minecraft:item_name" set value "$(name) 的名牌"

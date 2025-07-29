@@ -7,4 +7,4 @@ tag @n[type=item_display,tag=new_loot] remove new_loot
 
 execute align xyz positioned ~0.5 ~ ~0.5 run summon interaction ~ ~ ~ {width:1,height:1,Tags:["chest_lock"]}
 
-setblock ~ ~ ~ trapped_chest{LootTable:"sr:chest/locker_locked"}
+setblock ~ ~ ~ trapped_chest{LootTable:"sr:chest/locker_locked",CustomName:"储物柜"}

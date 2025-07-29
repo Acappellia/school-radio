@@ -5,4 +5,4 @@ execute align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {Tags:
 data modify entity @n[type=item_display,tag=new_loot] Rotation[0] set from entity @s Rotation[0]
 tag @n[type=item_display,tag=new_loot] remove new_loot
 
-setblock ~ ~ ~ trapped_chest{LootTable:"sr:chest/cabin"}
+setblock ~ ~ ~ trapped_chest{LootTable:"sr:chest/cabin",CustomName:"柜子"}

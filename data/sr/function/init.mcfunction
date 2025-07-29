@@ -46,6 +46,9 @@ scoreboard objectives add p_reload_shotgun dummy
 scoreboard objectives add p_bammo_shotgun dummy
 scoreboard objectives add p_shotgun_bolt custom:time_since_death
 scoreboard objectives add p_weight dummy
+scoreboard objectives add p_die deathCount
+
+scoreboard objectives add p_checkdie custom:time_since_death
 
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
 
