@@ -1,6 +1,8 @@
 worldborder warning distance 10
 
 time set 13500
+gamerule doDaylightCycle false
+difficulty peaceful
 
 function sr:debug/reset_chest
 function sr:debug/clear_all_drops

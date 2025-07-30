@@ -7,7 +7,7 @@
                 {
                     "type": "loot_table",
                     "value": "sr:loots/ammo",
-                    "weight": 5
+                    "weight": 10
                 },
                 {
                     "type": "loot_table",
