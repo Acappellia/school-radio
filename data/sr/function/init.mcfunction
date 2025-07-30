@@ -2,7 +2,7 @@ gamerule doWeatherCycle false
 gamerule doFireTick false
 gamerule doMobSpawning false
 gamerule commandBlockOutput false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule announceAdvancements false
 gamerule mobGriefing false
 gamerule disableRaids true
@@ -15,7 +15,7 @@ gamerule doWardenSpawning false
 gamerule doVinesSpread false
 gamerule naturalRegeneration false
 gamerule tntExplodes false
-#gamerule reducedDebugInfo true
+gamerule reducedDebugInfo true
 gamerule locatorBar false
 
 scoreboard objectives add sr dummy
@@ -67,3 +67,5 @@ team add mob_friend
 team modify mob_friend collisionRule always
 
 function ps:animation/init
+
+execute as @e[type=item_display] run data modify entity @s view_range set value 0.6

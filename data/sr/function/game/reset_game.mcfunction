@@ -16,6 +16,7 @@ scoreboard players set #game_date sr 0
 scoreboard players set #game_stage sr 1
 scoreboard players set #game_tune_count sr 0
 scoreboard players set #gunshot_fired sr 0
+scoreboard players set #game_finished sr 0
 
 execute store result score #game_total_food sr if entity @a[gamemode=adventure]
 scoreboard players add #game_total_food sr 1
@@ -36,12 +37,14 @@ tag @a remove dead
 data modify entity @n[type=text_display,tag=bb_text_base_clue] text.text set value ""
 data modify entity @n[type=text_display,tag=bb_text_main_clue] text.text set value ""
 
-data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{score:{name:"#game_total_food",objective:"sr"},color:"white"},{text:" 份",color:"gray"}]
+data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{text:"...",color:"white"},{text:" 份",color:"gray"}]
 data modify entity @n[type=text_display,tag=next_button_text] text set value [{text:"躺下睡觉",color:"gray"}]
 
 tp @a -139 19.5 -120
 gamemode adventure @a
 fill -137 20 -109 -138 21 -109 barrier
 
-execute as @e[tag=nagi] run function ps:animation/kill
+execute as @e[tag=nagi,type=interaction] on vehicle run function ps:animation/kill
 execute positioned -135.7 13.0 -125.5 rotated -16 0 run function ps:animation/add {ani_id:0}
+
+loot spawn -56.5 14.00 -93.5 loot sr:shotgun

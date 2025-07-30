@@ -1,0 +1,10 @@
+/function sr:debug/add_chest/backpack_1
+/function sr:debug/add_chest/backpack_2
+/function sr:debug/add_chest/cabin
+/function sr:debug/add_chest/cabin_locked
+/function sr:debug/add_chest/locker
+/function sr:debug/add_chest/locker_locked
+/function sr:debug/add_chest/safe
+/function sr:debug/add_chest/safe_locked
+/function sr:debug/add_chest/toolbox
+/function sr:debug/add_chest/toolbox_locked

@@ -8,6 +8,11 @@ execute unless data storage ps:ani available run data modify storage ps:ani avai
 data remove storage ps:ani_data data
 function ps:ani_data/nagi_0_sit_on_desk
 function ps:ani_data/nagi_1_rock_the_chair
+function ps:ani_data/nagi_2_sit_sadly
+function ps:ani_data/nagi_3_sit_quietly
+function ps:ani_data/nagi_4_look_at_the_clock
+function ps:ani_data/nagi_5_hanging
+function ps:ani_data/nagi_6_sleeping
 
 ## 动画机构造
 # 预设好每个动画的模型和各帧的变换矩阵, 对应到 ani_id

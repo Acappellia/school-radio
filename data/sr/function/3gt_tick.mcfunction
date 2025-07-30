@@ -11,4 +11,6 @@ function sr:environment/tick
 
 gamemode adventure @a[gamemode=survival]
 
+execute unless score #game_finished sr matches 1 as @a run function sr:game/check_finish
+
 schedule function sr:3gt_tick 3t replace

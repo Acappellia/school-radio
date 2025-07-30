@@ -8,3 +8,5 @@ scoreboard players set #nagi_cd sr -200
 execute store result storage sr:tmp random.index int 1 run random value 0..14
 
 function sr:nagi/show_nagi_word with storage sr:tmp random
+
+execute at @n[type=interaction,tag=nagi,distance=..10] run playsound entity.cat.ambient player @a ~ ~ ~ 1 2
