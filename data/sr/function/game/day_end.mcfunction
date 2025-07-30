@@ -8,7 +8,7 @@ scoreboard players set #game_daytime sr 0
 
 function sr:nagi/reset_nagi
 
-execute as @a[tag=!in_safehouse] at @s run function sr:game/force_come_home
+execute as @a[tag=!in_safehouse,gamemode=adventure] at @s run function sr:game/force_come_home
 
 difficulty peaceful
 

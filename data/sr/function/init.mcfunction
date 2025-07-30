@@ -63,8 +63,8 @@ worldborder set 2000
 
 schedule function sr:3gt_tick 3t append
 
-team add mob_friend
-team modify mob_friend collisionRule always
+#team add mob_friend
+#team modify mob_friend collisionRule always
 
 function ps:animation/init
 
