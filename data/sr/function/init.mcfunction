@@ -1,8 +1,10 @@
+
+#TODO remove debug info
 gamerule doWeatherCycle false
 gamerule doFireTick false
 gamerule doMobSpawning false
 gamerule commandBlockOutput false
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 gamerule announceAdvancements false
 gamerule mobGriefing false
 gamerule disableRaids true
@@ -15,7 +17,7 @@ gamerule doWardenSpawning false
 gamerule doVinesSpread false
 gamerule naturalRegeneration false
 gamerule tntExplodes false
-gamerule reducedDebugInfo true
+#amerule reducedDebugInfo true
 gamerule locatorBar false
 
 scoreboard objectives add sr dummy
@@ -67,5 +69,6 @@ schedule function sr:3gt_tick 3t append
 #team modify mob_friend collisionRule always
 
 function ps:animation/init
+function sr:camera/init
 
 execute as @e[type=item_display] run data modify entity @s view_range set value 0.6

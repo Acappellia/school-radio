@@ -17,7 +17,7 @@
                 {
                     "type": "loot_table",
                     "value": "sr:loots/food",
-                    "weight": 15
+                    "weight": 30
                 },
                 {
                     "type": "loot_table",

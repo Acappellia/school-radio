@@ -3,6 +3,8 @@ title @a title "\uea00"
 
 schedule function sr:game/day_start 30t replace
 
+tag @s add day_button_clicked
+
 execute if score #game_date sr matches 1.. run return 1
 execute store result score #game_total_food sr if entity @a[gamemode=adventure]
 scoreboard players add #game_total_food sr 1

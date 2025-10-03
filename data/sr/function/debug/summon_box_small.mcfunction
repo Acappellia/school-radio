@@ -1,0 +1,1 @@
+summon happy_ghast ~ ~ ~ {Tags:["box_small"],attributes:[{id:"scale",base:0.25},{id:"flying_speed",base:0},{id:"step_height",base:0}],Silent:true,Invulnerable:true}

@@ -3,7 +3,8 @@ execute as @a[tag=searching] at @s run function sr:loot/search_tick
 
 execute as @e[type=item] at @s run function sr:dropped_item/clear_motion
 
-execute as @e[type=happy_ghast] at @s run function sr:push_box/lock_rotation
+execute as @e[type=happy_ghast,tag=box] at @s run function sr:push_box/lock_rotation
+execute as @e[type=happy_ghast,tag=box_small] at @s run function sr:push_box/lock_rotation_small
 
 execute as @a[tag=radio_tuning] at @s run function sr:radio/tuning_tick
 
@@ -26,3 +27,4 @@ execute as @a run function sr:safehouse/tp_tick
 scoreboard players add #nagi_cd sr 1
 
 function ps:animation/tick
+function sr:camera/tick

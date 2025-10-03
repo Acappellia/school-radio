@@ -14,6 +14,9 @@ scoreboard players operation #game_total_food sr -= #food_eat_today sr
 execute if score #game_total_food sr matches ..-1 run scoreboard players set #game_total_food sr 0
 function sr:game/title/show
 
+execute as @a[tag=day_button_clicked] at @s run tp @s ~ ~ ~ ~180 ~
+tag @a remove day_button_clicked
+
 difficulty normal
 function sr:mob/spawn_all_mobs
 function sr:mob/reset_box

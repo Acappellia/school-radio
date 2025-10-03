@@ -49,4 +49,5 @@ fill -137 20 -109 -138 21 -109 barrier
 execute as @e[tag=nagi,type=interaction] on vehicle run function ps:animation/kill
 execute positioned -135.7 13.0 -125.5 rotated -16 0 run function ps:animation/add {ani_id:0}
 
-loot spawn -56.5 14.00 -93.5 loot sr:shotgun
+#TODO spawn map items
+#loot spawn -56.5 14.00 -93.5 loot sr:shotgun
