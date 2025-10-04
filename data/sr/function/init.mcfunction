@@ -56,6 +56,13 @@ scoreboard objectives add p_checkdie custom:time_since_death
 
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
 
+scoreboard objectives add p_ability_movement_xp dummy
+scoreboard objectives add p_ability_movement_level dummy
+scoreboard objectives add p_ability_carry_xp dummy
+scoreboard objectives add p_ability_carry_level dummy
+scoreboard objectives add p_ability_search_xp dummy
+scoreboard objectives add p_ability_search_level dummy
+
 fill -1 -64 -1 1 -62 1 bedrock
 
 forceload add -180 -157 -50 -50

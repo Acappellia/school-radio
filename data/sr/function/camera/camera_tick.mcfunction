@@ -3,4 +3,4 @@ execute unless data storage sr:camera frames[0] run return run function sr:camer
 
 $tp @s ~$(x) ~$(y) ~$(z) $(yaw) $(pitch)
 gamemode spectator @a[tag=in_camera]
-execute as @a[tag=in_camera] run spectate 0-0-0-0-100 @s
+execute as @a[tag=in_camera] run spectate 0-0-0-1-0 @s

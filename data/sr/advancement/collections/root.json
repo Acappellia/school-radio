@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "root": {
+            "trigger": "location"
+        }
+    },
+    "display": {
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge",
+        "icon": {
+            "id": "music_disc_11",
+            "count": 1
+        },
+        "background": "block/stripped_pale_oak_log",
+        "title": "收集 | Collection",
+        "description": "上个时代留下的只言片语"
+    }
+}

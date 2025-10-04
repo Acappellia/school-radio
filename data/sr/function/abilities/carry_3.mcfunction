@@ -1,0 +1,1 @@
+scoreboard players set @s p_ability_carry_level 3

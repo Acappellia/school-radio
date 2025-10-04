@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "root": {
+            "trigger": "location"
+        }
+    },
+    "display": {
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge",
+        "icon": {
+            "id": "writable_book",
+            "count": 1
+        },
+        "background": "block/stripped_cherry_log",
+        "title": "回忆 | Memories",
+        "description": "这是曾经属于我们的故事"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "root": {
+            "trigger": "location"
+        }
+    },
+    "display": {
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge",
+        "icon": {
+            "id": "stone_pickaxe",
+            "count": 1
+        },
+        "background": "block/stripped_dark_oak_log",
+        "title": "技巧 | Abilities",
+        "description": "聆听世界带来的宝贵经验"
+    }
+}
