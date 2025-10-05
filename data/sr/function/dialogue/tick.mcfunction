@@ -1,0 +1,7 @@
+execute if data storage sr:dialogue lines[0].is_nagi run title @a[scores={p_camera_prepare=0..}] actionbar [{text:"nagi",color:"#78bfe2"},{text:" : ",color:"white"},{nbt:"lines[0].text",storage:"sr:dialogue",interpret:true},{text:" [",color:"gray"},{keybind:"key.jump",color:"dark_gray"},{text:"] >>>",color:"gray"}]
+execute if data storage sr:dialogue lines[0].is_player run title @a[scores={p_camera_prepare=0..}] actionbar [{selector:"@s",color:"#ffe683"},{text:" : ",color:"white"},{nbt:"lines[0].text",storage:"sr:dialogue",interpret:true},{text:" [",color:"gray"},{keybind:"key.jump",color:"dark_gray"},{text:"] >>>",color:"gray"}]
+execute if data storage sr:dialogue lines[0].is_narrator run title @a[scores={p_camera_prepare=0..}] actionbar [{nbt:"lines[0].text",storage:"sr:dialogue",interpret:true},{text:" [",color:"gray"},{keybind:"key.jump",color:"dark_gray"},{text:"] >>>",color:"gray"}]
+
+execute unless data storage sr:dialogue lines[0] run title @a[scores={p_camera_prepare=0..}] actionbar [{text:" [",color:"gray"},{keybind:"key.jump",color:"yellow"},{text:"] >>>",color:"gray"}]
+
+execute if predicate sr:keys/jump run function sr:dialogue/next

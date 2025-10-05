@@ -4,5 +4,5 @@ function sr:inventory/update_xp_bar_2 with storage sr:tmp weight
 
 execute if score @s p_weight matches ..47 run return -1
 
-execute if score @s p_weight matches 48..71 run return run function sr:inventory/heavy_weight
-execute if score @s p_weight matches 71.. run return run function sr:inventory/overweight
+execute if score @s p_weight matches 48..73 run return run function sr:inventory/heavy_weight
+execute if score @s p_weight matches 74.. run return run function sr:inventory/overweight

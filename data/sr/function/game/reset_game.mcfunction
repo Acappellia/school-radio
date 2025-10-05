@@ -27,7 +27,6 @@ scoreboard players operation #game_total_food sr *= #6 sr
 clear @a
 effect clear @a
 effect give @a instant_health 1 9
-effect give @a saturation 1 9
 
 execute as @a run attribute @s movement_speed base reset
 execute as @a run attribute @s jump_strength base reset
@@ -35,6 +34,7 @@ execute as @a run attribute @s jump_strength base reset
 tag @a remove searching
 tag @a remove radio_tuning
 tag @a remove dead
+tag @a remove perm_dead
 
 data modify entity @n[type=text_display,tag=bb_text_base_clue] text.text set value ""
 data modify entity @n[type=text_display,tag=bb_text_main_clue] text.text set value ""
@@ -51,6 +51,7 @@ execute positioned -135.7 13.0 -125.5 rotated -16 0 run function ps:animation/ad
 
 advancement revoke @a everything
 execute as @a run function sr:abilities/reset
+execute as @a run function sr:death/reset_penalty
 
 #TODO spawn map items
 #loot spawn -56.5 14.00 -93.5 loot sr:shotgun

@@ -41,7 +41,13 @@
             "count": 1
         },
         "title": "探路者 I",
-        "description": "增加些许移动速度"
+        "description": [
+            "增加些许移动速度",
+            {
+                "text": "\n移动、奔跑以提升",
+                "color": "gray"
+            }
+        ]
     },
     "rewards": {
         "function": "sr:abilities/movement_1"

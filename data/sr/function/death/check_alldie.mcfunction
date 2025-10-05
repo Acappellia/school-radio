@@ -1,6 +1,2 @@
-execute if entity @a[tag=!dead] run return -1
-
-title @a times 10 30 10
-title @a title [{text:"Game Over",color:"dark_gray"}]
-
-schedule function sr:game/reset_game 60t replace
+execute if score #game_daytime sr matches 1 run return run function sr:game/schedule_day_stop
+execute if score #game_daytime sr matches 0 as @a[tag=dead,tag=!perm_dead] run function sr:death/player_revive_self

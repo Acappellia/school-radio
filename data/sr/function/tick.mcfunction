@@ -20,7 +20,7 @@ execute as @a[scores={p_die=1..}] at @s run function sr:death/player_die
 
 gamemode spectator @a[tag=dead]
 
-execute as @p[scores={p_checkdie=1}] run function sr:death/check_alldie
+execute as @p[scores={p_checkdie=1}] run function sr:death/check_allpermdie
 
 execute as @a run function sr:safehouse/tp_tick
 
@@ -28,3 +28,4 @@ scoreboard players add #nagi_cd sr 1
 
 function ps:animation/tick
 function sr:camera/tick
+execute as @p[tag=in_dialogue] run function sr:dialogue/tick

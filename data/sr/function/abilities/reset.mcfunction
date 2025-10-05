@@ -6,3 +6,8 @@ scoreboard players reset @s p_ability_movement_level
 scoreboard players reset @s p_ability_carry_xp
 scoreboard players reset @s p_ability_search_level
 scoreboard players reset @s p_ability_search_xp
+
+scoreboard players reset @s p_move_walk
+scoreboard players reset @s p_move_sprint
+scoreboard players reset @s p_move_sneak
+scoreboard players reset @s p_move_stat

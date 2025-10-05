@@ -19,4 +19,6 @@ $data modify storage sr:camera frames set from storage sr:camera_paths data[$(pa
 
 function sr:camera/summon_camera with storage sr:tmp camera_pos
 
+scoreboard players set @a[gamemode=!spectator,tag=!in_camera] p_camera_prepare -8
+execute as @a[gamemode=!spectator,tag=!in_camera] run function sr:camera/show_blackscreen_ultrashot
 tag @a[gamemode=!spectator] add in_camera

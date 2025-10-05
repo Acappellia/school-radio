@@ -41,7 +41,13 @@
             "count": 1
         },
         "title": "负重者 I",
-        "description": "增加些许最大负重"
+        "description": [
+            "增加些许最大负重",
+            {
+                "text": "\n将不同的收集品带回安全屋以提升",
+                "color": "gray"
+            }
+        ]
     },
     "rewards": {
         "function": "sr:abilities/carry_1"

@@ -25,4 +25,5 @@ fill -137 20 -109 -138 21 -109 air
 data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{score:{name:"#game_total_food",objective:"sr"},color:"white"},{text:" 份",color:"gray"}]
 data modify entity @n[type=text_display,tag=next_button_text] text set value [{text:"提前休息",color:"gray"}]
 
-execute as @e[type=item_display,tag=lootable,limit=10,sort=random] at @s run function sr:debug/add_chest/reset_self
+#execute as @e[type=item_display,tag=lootable,limit=10,sort=random] at @s run function sr:debug/add_chest/reset_self
+stopsound @a record

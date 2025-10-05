@@ -63,6 +63,15 @@ scoreboard objectives add p_ability_carry_level dummy
 scoreboard objectives add p_ability_search_xp dummy
 scoreboard objectives add p_ability_search_level dummy
 
+scoreboard objectives add p_move_walk custom:walk_one_cm
+scoreboard objectives add p_move_sprint custom:sprint_one_cm
+scoreboard objectives add p_move_sneak custom:crouch_one_cm
+scoreboard objectives add p_move_stat dummy
+
+scoreboard objectives add p_death_penalty dummy
+
+scoreboard objectives add p_camera_prepare custom:time_since_death
+
 fill -1 -64 -1 1 -62 1 bedrock
 
 forceload add -180 -157 -50 -50
@@ -75,7 +84,13 @@ schedule function sr:3gt_tick 3t append
 #team add mob_friend
 #team modify mob_friend collisionRule always
 
+team add in_safehouse
+team modify in_safehouse collisionRule always
+team modify in_safehouse friendlyFire false
+team modify in_safehouse nametagVisibility always
+
 function ps:animation/init
 function sr:camera/init
+function sr:dialogue/init
 
 execute as @e[type=item_display] run data modify entity @s view_range set value 0.6
