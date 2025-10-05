@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash58"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash57",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash58"
+      }
+    },
+    "hidden": true,
+    "title": "一本相册",
+    "description": "照片里同学的头像一个个被圈起来了，旁边写着：‘不再来了’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

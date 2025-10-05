@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash61"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash60",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash61"
+      }
+    },
+    "hidden": true,
+    "title": "试卷",
+    "description": "试卷分数很低，上面画满了扭曲的某个图案"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

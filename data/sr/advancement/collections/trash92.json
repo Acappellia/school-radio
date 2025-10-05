@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash92"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash91",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash92"
+      }
+    },
+    "hidden": true,
+    "title": "玻璃瓶",
+    "description": "瓶子里装着一只标本蝴蝶，那只蝴蝶还在微微扇动翅膀"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

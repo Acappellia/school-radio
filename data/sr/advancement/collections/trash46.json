@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash46"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash45",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash46"
+      }
+    },
+    "hidden": true,
+    "title": "高浓度兴奋剂",
+    "description": "用于保持兴奋防止睡着，但是它的主人没来得及使用"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash1"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/root",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash1"
+      }
+    },
+    "hidden": true,
+    "title": "破碎的手机",
+    "description": "屏幕停在一个相册APP中，上面显示着一个模糊不清的图案"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

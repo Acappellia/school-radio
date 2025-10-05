@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash60"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash59",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash60"
+      }
+    },
+    "hidden": true,
+    "title": "一个对讲机",
+    "description": "对讲机已经没电了，如果还有电可以找找另一个对讲机在哪"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

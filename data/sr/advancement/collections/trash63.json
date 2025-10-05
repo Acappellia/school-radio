@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash63"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash62",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash63"
+      }
+    },
+    "hidden": true,
+    "title": "《如何和梦中人交流》",
+    "description": "书被人翻得很旧，在重点的地方，被画满了红线"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

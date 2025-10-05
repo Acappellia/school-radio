@@ -13,7 +13,7 @@
                             "components": {
                                 "custom_data": "{is_ammo:1b,weight:1}",
                                 "item_name": "独头鹿弹",
-                                "lore":[{"text": "应该是给枪用的","color": "gray","italic": false},"",{"text": "重量 1","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "弹药","color": "gray","italic": false},{"text": "应该是给枪用的","color": "white","italic": false},"",{"text": "重量 1","color": "dark_gray","italic": false}],
                                 "item_model": "armo",
                                 "max_stack_size": 8
                             }

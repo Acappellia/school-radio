@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash86"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash85",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash86"
+      }
+    },
+    "hidden": true,
+    "title": "木雕",
+    "description": "雕刻的是一个女孩，做工很粗糙，底座刻着：‘她来自梦中’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash57"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash56",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash57"
+      }
+    },
+    "hidden": true,
+    "title": "医疗记录",
+    "description": "‘患者在看见某个图案后，开始不自觉地开始传播该图案’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

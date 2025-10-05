@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash102"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash101",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash102"
+      }
+    },
+    "hidden": true,
+    "title": "服务器密码",
+    "description": "密码提示是：‘21世纪最甜美的梦是什么’答案是：‘KOSMOS’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

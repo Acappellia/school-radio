@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash41"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash40",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash41"
+      }
+    },
+    "hidden": true,
+    "title": "打开的字典",
+    "description": "字典停在了‘疯狂’这一页，空白处写着‘有人在传播它’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash79"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash78",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash79"
+      }
+    },
+    "hidden": true,
+    "title": "捕兽夹",
+    "description": "夹子是合上的，但里面没有野兽，只有一部被夹碎的收集"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

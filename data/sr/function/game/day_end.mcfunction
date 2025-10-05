@@ -22,8 +22,8 @@ difficulty peaceful
 #scoreboard players operation #game_total_food sr += #food_get_today sr
 function sr:game/title/show_night
 
-loot give @a[team=in_safehouse,gamemode=adventure] loot sr:dummy_item
-clear @a barrier
+execute as @a[team=in_safehouse,gamemode=adventure] run team join in_safehouse
+execute as @a[team=in_safehouse,gamemode=adventure] run function sr:game/refresh_inv
 
 #execute as @e[type=item_display,tag=player_tag,x=-147,y=17,z=-120,dx=12,dy=-5,dz=-17] run function sr:death/check_revive_player
 execute as @a[tag=dead,tag=!perm_dead] run function sr:death/player_revive_self

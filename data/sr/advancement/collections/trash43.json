@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash43"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash42",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash43"
+      }
+    },
+    "hidden": true,
+    "title": "被驳回的提案",
+    "description": "提案标题：《关于封闭学校和关闭校园网络可行性报告》"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

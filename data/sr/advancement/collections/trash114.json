@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash114"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash113",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash114"
+      }
+    },
+    "hidden": true,
+    "title": "褪色的明信片",
+    "description": "‘希望你在这里’。寄信人和收信人的地址，都是这所学校"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

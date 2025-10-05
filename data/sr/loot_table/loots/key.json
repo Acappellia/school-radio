@@ -13,7 +13,7 @@
                             "components": {
                                 "custom_data": "{is_key:1b,weight:8}",
                                 "item_name": "开锁工具",
-                                "lore":[{"text": "可以打开锁住的容器","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "道具","color": "gray","italic": false},{"text": "可以打开锁住的容器","color": "white","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
                                 "item_model": "key",
                                 "max_stack_size": 1
                             }

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash44"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash43",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash44"
+      }
+    },
+    "hidden": true,
+    "title": "破损收音机",
+    "description": "它的频率旋钮被掰断了，永远地停留在一个无人广播的波段上"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

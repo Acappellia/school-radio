@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash81"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/root",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash81"
+      }
+    },
+    "hidden": true,
+    "title": "诊断书",
+    "description": "‘患者开始在梦游时出现了攻击行为，并且会在夜晚更加狂躁’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

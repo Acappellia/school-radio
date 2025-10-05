@@ -1,0 +1,538 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:2}",
+                "item_name": "破碎的手机",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "屏幕停在一个相册APP中，上面显示着一个模糊不清的图案",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 2",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash1",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "揉烂的宣传单",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "上面印着一个巨大的图案，但是已经被人涂花了",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash2",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:4}",
+                "item_name": "高档降噪耳机",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "能够隔绝外界的声音，但是隔绝不了脑中的噪音",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 4",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash3",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "空的止痛药",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "药盒上用指甲划着几个字：‘没有，头还在痛’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash4",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "就诊卡",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "就诊原因一栏写着：‘长时间幻听，且伴随着头痛’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash5",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "超市小票",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "购买了大量的耳塞和眼罩，上面还有几滴干掉的血迹",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash6",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "撕下的日历",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "那一天被红圈圈出，旁边写着‘灾难开始的日子’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash7",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "打印的辞职信",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "辞职理由：‘我开始变得嗜睡，做的梦也越来越长了’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash8",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:4}",
+                "item_name": "棒球",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "是明星球员的签名棒球，球上沾满了暗红色的物质",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 4",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash9",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "空的狗粮袋",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "袋子是被牙齿撕开的，但齿痕……不属于犬类",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash10",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一页音乐理论",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "在‘共鸣’这一章写着：‘人脑是会和外界共鸣的音叉’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash11",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "空的安眠药",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "瓶身上贴着一张字条：‘我的梦开始越来越长了’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash12",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:12}",
+                "item_name": "断电路由器",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "网络永远消失了，一个时代的瘟疫曾顺着它传遍世界",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 12",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash13",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "便签",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "上面写着：‘头疼，易怒，很困，但是我不想再做梦了’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash14",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "社区通知",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "不要传播‘网络上的有害图像’，落款日：灾难的前一天",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash15",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:8}",
+                "item_name": "损坏的警用手枪",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "弹匣已经空了，枪口沾满了血迹",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 8",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash16",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

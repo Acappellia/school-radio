@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash67"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash66",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash67"
+      }
+    },
+    "hidden": true,
+    "title": "艺术史书",
+    "description": "其中一页写着：‘图案具有暗示的作用，这种作用甚至能延伸到梦中’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

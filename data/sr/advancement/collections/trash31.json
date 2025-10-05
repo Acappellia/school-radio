@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash31"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash30",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash31"
+      }
+    },
+    "hidden": true,
+    "title": "冰冷的暖水袋",
+    "description": "橡胶已经老化，但上面似乎还残留着一些温度"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

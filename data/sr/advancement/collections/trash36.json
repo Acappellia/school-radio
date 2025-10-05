@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash36"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash35",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash36"
+      }
+    },
+    "hidden": true,
+    "title": "保健老师笔记",
+    "description": "‘这些送来的学生开始变得嗜睡并且睡眠时间越来越长了’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

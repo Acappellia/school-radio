@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash101"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash100",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash101"
+      }
+    },
+    "hidden": true,
+    "title": "论文笔记",
+    "description": "结论：‘图案本身并无恶意，它只是一种用意识传播的寄生虫’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

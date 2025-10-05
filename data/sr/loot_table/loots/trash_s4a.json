@@ -1,0 +1,538 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:2}",
+                "item_name": "KOSMOS徽章",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "徽章的一角已经损坏，上面的图案不再具有精神污染的效果",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 2",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash97",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "烧毁的日志",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "最开始这个图案在互联网传播时，文件名为KOSMOS.png",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash98",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:4}",
+                "item_name": "地球仪",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "地球仪上没有国界，只画着一张巨大的图案",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 4",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash99",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "空白的出生证明",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "姓名，父母，日期……一切都是空白",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash100",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "论文笔记",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "结论：‘图案本身并无恶意，它只是一种用意识传播的寄生虫’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash101",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "服务器密码",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "密码提示是：‘21世纪最甜美的梦是什么’答案是：‘KOSMOS’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash102",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一张照片",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "照片上，是地球的卫星图，陆地上的光点组成了一个图案",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash103",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一页手稿",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "‘她将我们引入梦中，梦中我见到了所有人，所以我将自己交给了她’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash104",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:4}",
+                "item_name": "坏掉的万花筒",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "无论怎么转动，里面都只有一种图案",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 4",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash105",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一个硬币",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "硬币的两面都是一样的图案，一个捂住眼睛的人",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash106",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "论文终稿",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "标题：《关于将人类移居到梦境中的可能性研究》",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash107",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:2}",
+                "item_name": "密封的玻璃罐",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "里面什么都没有，标签上却写着：‘梦境外的空气’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 2",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash108",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "被踩碎的SIM卡",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "它的主人在最后一刻，选择了物理上的断网",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash109",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:2}",
+                "item_name": "破损的诗集",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "最后一页写着一首短诗：‘我把躯体交给了梦境之外的你’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 2",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash110",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一粒沙子",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "一粒被单独保存在标本盒里的沙子。标签：‘一个完整的世界’",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash111",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "brick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{is_trash:1b,weight:1}",
+                "item_name": "一张白纸",
+                "lore": [
+                  {
+                    "text": "杂物",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "一张纯粹的白纸，没有任何痕迹",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "重量 1",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "item_model": "trash112",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

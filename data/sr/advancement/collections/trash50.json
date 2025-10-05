@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash50"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash49",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash50"
+      }
+    },
+    "hidden": true,
+    "title": "药瓶标签",
+    "description": "药品名称：‘安眠药’，旁边写着：‘梦里有着我想见到的人’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

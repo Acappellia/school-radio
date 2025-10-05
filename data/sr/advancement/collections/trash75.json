@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash75"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash74",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash75"
+      }
+    },
+    "hidden": true,
+    "title": "《图案对大脑影响》论文",
+    "description": "文章的其中一段写着：‘特定的图案可以激活人脑中的某个功能’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

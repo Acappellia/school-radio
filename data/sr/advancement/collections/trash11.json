@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash11"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash10",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash11"
+      }
+    },
+    "hidden": true,
+    "title": "一页音乐理论",
+    "description": "在‘共鸣’这一章写着：‘人脑是会和外界共鸣的音叉’"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

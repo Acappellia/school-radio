@@ -13,7 +13,7 @@
                             "components": {
                                 "custom_data": "{is_battery:1b,weight:8}",
                                 "item_name": "电池",
-                                "lore":[{"text": "可以给电台供电","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "道具","color": "gray","italic": false},{"text": "可以给电台供电","color": "white","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
                                 "item_model": "battery",
                                 "max_stack_size": 1
                             }

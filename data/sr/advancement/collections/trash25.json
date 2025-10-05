@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "collect": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "brick",
+            "components": {
+              "item_model": "trash25"
+            }
+          }
+        ],
+        "player": {
+          "team": "in_safehouse"
+        }
+      }
+    }
+  },
+  "parent": "sr:collections/trash24",
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "icon": {
+      "id": "brick",
+      "count": 1,
+      "components": {
+        "item_model": "trash25"
+      }
+    },
+    "hidden": true,
+    "title": "生日贺卡",
+    "description": "虽然我因病无法参加你的派对，但还是祝你生日快乐"
+  },
+  "rewards": {
+    "function": "sr:abilities/add_carry"
+  }
+}

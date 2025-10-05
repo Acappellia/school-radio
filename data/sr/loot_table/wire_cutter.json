@@ -14,7 +14,8 @@
                                 "custom_data": "{wire_cutter:1b,weight:8}",
                                 "custom_name": [{"text": "剪线钳","color": "white","italic": false}],
                                 "lore": [
-                                    [{"text": "可以剪开一些铁丝网","color": "gray"}],
+                                    {"text": "工具","color": "gray","italic": false},
+                                    [{"text": "可以剪开一些铁丝网","color": "white"}],
                                     "",
                                     {"text": "重量 8","color": "dark_gray","italic": false}
                                 ],

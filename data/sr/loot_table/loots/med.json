@@ -13,7 +13,7 @@
                             "components": {
                                 "custom_data": "{is_med:1b,weight:4}",
                                 "item_name": "绷带",
-                                "lore":[{"text": "使用回复 4 点生命","color": "gray","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "消耗品","color": "gray","italic": false},{"text": "使用回复 4 点生命","color": "white","italic": false},"",{"text": "重量 4","color": "dark_gray","italic": false}],
                                 "consumable": {
                                     "consume_seconds": 4,
                                     "animation": "drink",
@@ -48,7 +48,7 @@
                             "components": {
                                 "custom_data": "{is_med:1b,weight:8}",
                                 "item_name": "止痛药",
-                                "lore":[{"text": "使用回复 8 点生命","color": "gray","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "消耗品","color": "gray","italic": false},{"text": "使用回复 8 点生命","color": "white","italic": false},"",{"text": "重量 8","color": "dark_gray","italic": false}],
                                 "consumable": {
                                     "consume_seconds": 4,
                                     "animation": "drink",
@@ -83,7 +83,7 @@
                             "components": {
                                 "custom_data": "{is_med:1b,weight:16}",
                                 "item_name": "应急医疗包",
-                                "lore":[{"text": "使用回复全部生命","color": "gray","italic": false},"",{"text": "重量 16","color": "dark_gray","italic": false}],
+                                "lore":[{"text": "消耗品","color": "gray","italic": false},{"text": "使用回复全部生命","color": "white","italic": false},"",{"text": "重量 16","color": "dark_gray","italic": false}],
                                 "consumable": {
                                     "consume_seconds": 10,
                                     "animation": "drink",

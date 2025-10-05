@@ -14,7 +14,8 @@
                                 "custom_data": "{is_playertag:1b,weight:16}",
                                 "item_name": {"text": "名牌"},
                                 "lore": [
-                                    {"text": "带回安全屋并丢在地上，可以使其重生","color":"gray"},
+                                    {"text": "道具","color": "gray","italic": false},
+                                    {"text": "带回安全屋并丢在地上，可以使其重生","color":"white"},
                                     "",
                                     {"text": "重量 16","color": "dark_gray","italic": false}
                                 ],
