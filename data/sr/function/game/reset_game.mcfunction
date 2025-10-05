@@ -1,5 +1,7 @@
 worldborder warning distance 10
 
+stopsound @a
+
 time set 13500
 gamerule doDaylightCycle false
 difficulty peaceful
@@ -20,9 +22,7 @@ scoreboard players set #game_tune_count sr 0
 scoreboard players set #gunshot_fired sr 0
 scoreboard players set #game_finished sr 0
 
-execute store result score #game_total_food sr if entity @a[gamemode=adventure]
-scoreboard players add #game_total_food sr 1
-scoreboard players operation #game_total_food sr *= #6 sr
+function sr:food/clear_storage
 
 clear @a
 effect clear @a
@@ -39,10 +39,10 @@ tag @a remove perm_dead
 data modify entity @n[type=text_display,tag=bb_text_base_clue] text.text set value ""
 data modify entity @n[type=text_display,tag=bb_text_main_clue] text.text set value ""
 
-data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{text:"...",color:"white"},{text:" 份",color:"gray"}]
+data modify entity @n[type=text_display,tag=bb_text_food] text set value [{text:"食物还剩 ",color:"gray"},{text:"...",color:"white"},{text:" 份 ↓",color:"gray"}]
 data modify entity @n[type=text_display,tag=next_button_text] text set value [{text:"躺下睡觉",color:"gray"}]
 
-tp @a -139 19.5 -120
+tp @a -139 19.5 -120 -90 0
 gamemode adventure @a
 fill -137 20 -109 -138 21 -109 barrier
 

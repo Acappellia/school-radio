@@ -1,5 +1,5 @@
 execute if score #nagi_cd sr matches ..-1 run return -1
-scoreboard players set #nagi_cd sr -40
+scoreboard players set #nagi_cd sr -12
 
 execute as @a at @s run playsound block.copper_bulb.turn_off player @s ~ ~ ~ 1 0
 

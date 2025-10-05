@@ -5,6 +5,9 @@ execute if score #current_time sr matches 11800 run worldborder warning distance
 #last 1min bell
 execute if score #current_time sr matches 11800 as @a at @s run playsound minecraft:bell_1 player @s ~ ~3 ~ 1 1
 
+#auto enter night
+execute if score #current_time sr matches 11980 as @p[team=in_safehouse,gamemode=adventure] run function sr:game/schedule_day_stop
+
 #enderman sound
 execute if score #current_time sr matches 12000 as @a at @s run playsound entity.enderman.stare player @s ~ ~ ~ 1 0.5
 execute if score #current_time sr matches 12200 as @a at @s run playsound entity.enderman.stare player @s ~ ~ ~ 1 0.5
@@ -23,4 +26,4 @@ execute if score #current_time sr matches 12920 as @a at @s run playsound minecr
 execute if score #current_time sr matches 13000 run function sr:game/schedule_day_stop
 
 #noise
-execute if score #current_time sr matches 11800.. run function sr:game/random_noise
+execute if score #current_time sr matches 12000.. run function sr:game/random_noise

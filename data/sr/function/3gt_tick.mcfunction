@@ -9,11 +9,11 @@ execute as @a[predicate=sr:looking_at_day_next] run function sr:game/day_next_hi
 
 function sr:environment/tick
 
-gamemode adventure @a[gamemode=survival]
-
 execute unless score #game_finished sr matches 1 as @a run function sr:game/check_finish
 execute as @a run function sr:abilities/move_stat
 
 effect give @a saturation infinite 0 true
+
+execute if score #game_date sr matches 1.. run function sr:food/tick
 
 schedule function sr:3gt_tick 3t replace
