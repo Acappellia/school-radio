@@ -7,3 +7,4 @@ execute unless data storage sr:dialogue lines[0] run return run function sr:dial
 
 execute if data storage sr:dialogue lines[0].click_command run function sr:dialogue/run_command with storage sr:dialogue lines[0]
 data remove storage sr:dialogue lines[0]
+execute if data storage sr:dialogue lines[0].is_nagi as @a at @s run playsound block.copper_bulb.turn_on player @s ~ ~ ~ 1 2

@@ -1,0 +1,42 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s1a"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s1b"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s2a"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s2b"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s3a"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s3b"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s4a"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/trash_s4b"
+                }
+            ]
+        }
+    ]
+}

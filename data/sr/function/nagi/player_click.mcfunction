@@ -6,6 +6,9 @@ scoreboard players set #nagi_cd sr -20
 execute if score #game_date sr matches 0 run tag @s add in_dialogue
 execute if score #game_date sr matches 0 at @n[tag=nagi,type=interaction,distance=..10] run return run function sr:camera/start {path:0}
 
+execute if score #nagi_dialogue_done sr matches 1.. if score #game_daytime sr matches 1 run return run function sr:nagi/click_dialogue_done_day
+execute if score #nagi_dialogue_done sr matches 1.. if score #game_daytime sr matches 0 run return run function sr:nagi/click_dialogue_done_night
+
 execute if score #game_daytime sr matches 1 run return run function sr:nagi/click_day
 execute if score #game_daytime sr matches 0 run return run function sr:nagi/click_night
 

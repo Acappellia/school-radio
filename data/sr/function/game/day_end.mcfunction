@@ -25,6 +25,8 @@ function sr:game/title/show_night
 execute as @a[team=in_safehouse,gamemode=adventure] run team join in_safehouse
 execute as @a[team=in_safehouse,gamemode=adventure] run function sr:game/refresh_inv
 
+scoreboard players set #nagi_dialogue_done sr 0
+
 #execute as @e[type=item_display,tag=player_tag,x=-147,y=17,z=-120,dx=12,dy=-5,dz=-17] run function sr:death/check_revive_player
 execute as @a[tag=dead,tag=!perm_dead] run function sr:death/player_revive_self
 

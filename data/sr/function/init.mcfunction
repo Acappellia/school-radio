@@ -72,6 +72,7 @@ scoreboard objectives add p_move_stat dummy
 scoreboard objectives add p_death_penalty dummy
 
 scoreboard objectives add p_camera_prepare custom:time_since_death
+scoreboard objectives add p_dialogue_prepare custom:time_since_death
 
 fill -1 -64 -1 1 -62 1 bedrock
 

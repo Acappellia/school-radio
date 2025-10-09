@@ -17,6 +17,8 @@ function sr:game/title/show
 execute as @a[tag=day_button_clicked] at @s run tp @s ~ ~ ~ ~180 ~
 tag @a remove day_button_clicked
 
+scoreboard players set #nagi_dialogue_done sr 0
+
 difficulty normal
 function sr:mob/spawn_all_mobs
 function sr:mob/reset_box
