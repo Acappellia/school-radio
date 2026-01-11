@@ -66,7 +66,7 @@ data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"我的战利品就交给你啦，好好帮我保管！",color:"aqua"}]}
 
 #1
-data modify storage sr:dialogue_lines dialogue append value {note:"night_ani_1_rock_the_chair_2",lines:[]}
+data modify storage sr:dialogue_lines dialogue append value {note:"night_ani_1_rock_the_chair_3",lines:[]}
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"你总算回来了！",color:"aqua"}]}
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"你知道吗！今天我碰到了件特别离谱的事！",color:"aqua"}]}
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_player:1b,text:[{text:"嗯？",color:"white"}]}
@@ -75,9 +75,6 @@ data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_narrat
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_narrator:1b,text:[{text:"虽然找到的东西似乎没什么用，但是她描述的经历确实扣人心弦",color:"gray"}],click_command:"function sr:camera/dialogue_change_path {path:4}"}
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"……我借着它直接一跳，就从栏杆翻了过来！",color:"aqua"}]}
 data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_player:1b,text:[{text:"好惊险！",color:"white"}]}
-data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"怎么样？我身手不错吧！",color:"aqua"}]}
-data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_player:1b,text:[{text:"比我灵活多了呢",color:"white"}]}
-data modify storage sr:dialogue_lines dialogue[-1].lines append value {is_nagi:1b,text:[{text:"嘿嘿，以后你可得多依靠我哦！",color:"aqua"}],click_command:"loot give @s loot sr:loots/ammo"}
 
 #2
 data modify storage sr:dialogue_lines dialogue append value {note:"night_ani_2_sit_sadly",lines:[]}
