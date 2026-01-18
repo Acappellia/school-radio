@@ -1,0 +1,20 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/sample",
+                    "weight": 10
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sr:loots/sample_2",
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}

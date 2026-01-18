@@ -42,6 +42,8 @@ scoreboard objectives add p_search_rotation dummy
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
 scoreboard objectives add p_ability_search_level dummy
 
+scoreboard objectives add chest_loottime dummy
+
 fill -1 -64 -1 1 -62 1 bedrock
 
 schedule function sr:3gt_tick 3t append

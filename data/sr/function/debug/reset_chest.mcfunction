@@ -1,1 +1,0 @@
-execute as @e[type=item_display,tag=lootable] at @s run function sr:debug/add_chest/reset_self

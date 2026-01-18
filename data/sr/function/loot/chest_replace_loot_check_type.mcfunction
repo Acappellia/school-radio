@@ -1,0 +1,9 @@
+execute as @s[tag=dlong] run return run loot insert 0 -64 0 loot sr:loot_dlong
+execute as @s[tag=laji] run return run loot insert 0 -64 0 loot sr:loot_laji
+execute as @s[tag=long] run return run loot insert 0 -64 0 loot sr:loot_long
+execute as @s[tag=music] run return run loot insert 0 -64 0 loot sr:loot_music
+execute as @s[tag=paper] run return run loot insert 0 -64 0 loot sr:loot_paper
+execute as @s[tag=safe_locked] run return run loot insert 0 -64 0 loot sr:loot_safe_locked
+execute as @s[tag=safe] run return run loot insert 0 -64 0 loot sr:loot_safe
+execute as @s[tag=short] run return run loot insert 0 -64 0 loot sr:loot_short
+execute as @s[tag=tool] run return run loot insert 0 -64 0 loot sr:loot_tool

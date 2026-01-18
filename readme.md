@@ -1,41 +1,18 @@
-学园孤岛！
+单独的摸金模块
 
-# 需求模块
+## 创建箱子
 
-## 电台调频
+如下指令可在地图里添加不同种类的容器：
+/function sr:add_chest/dlong
+/function sr:add_chest/laji
+/function sr:add_chest/long
+/function sr:add_chest/music
+/function sr:add_chest/paper
+/function sr:add_chest/safe_locked
+/function sr:add_chest/safe
+/function sr:add_chest/short
+/function sr:add_chest/tool
 
-- 电台前有一个椅子，点击后玩家坐到椅子上（无法移动）
-- 电台有两个旋钮，用w和s切换旋钮，a和d调节旋钮，一个粗调，一格精调，调节频率
-- 频率会显示在电台的屏幕上
-- 调到正确的频率之后会有反应
+## 创建战利品表
 
-## 搜箱子
-
-- 搜东西需要开着箱子界面读条
-- 使用改名的陷阱箱
-- 两种容器
-    - 书包
-    - 柜子
-
-## 打怪
-
-- 枪械？
-- 近战？
-- 怪物的生成和击杀演出？
-
-## 玩家
-
-- 负重系统
-- 物资消耗
-
-## 解谜
-
-- 推箱子-乐魂版
-- 箱子边上潜行抓住
-- 移动拖动箱子
-
-## 开锁
-
-- qte
-
-## 密码锁
+在 `/data/sr/loot_table` 下修改每种容器产出的战利品类别，并在 `/data/sr/loot_table/loots` 下定义不同的类别，详见已有的示例
