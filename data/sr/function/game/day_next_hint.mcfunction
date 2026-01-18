@@ -1,2 +1,0 @@
-execute if score #game_daytime sr matches 0 run title @s actionbar [{text:"[",color:"white"},{keybind:"key.sneak",color:"yellow"},{text:"+",color:"white"},{keybind:"key.use",color:"yellow"},{text:"]",color:"white"}," 度过夜晚，进入下一天"]
-execute if score #game_daytime sr matches 1 run title @s actionbar [{text:"[",color:"white"},{keybind:"key.sneak",color:"yellow"},{text:"+",color:"white"},{keybind:"key.use",color:"yellow"},{text:"]",color:"white"}," 提前结束日间，进入夜晚休息"]

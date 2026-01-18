@@ -1,1 +1,0 @@
-execute as @p[tag=in_dialogue] at @s at @n[tag=nagi,type=interaction,distance=..50] run function sr:camera/start with storage sr:tmp camera_schedule

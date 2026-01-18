@@ -1,6 +1,6 @@
 execute unless block ~ ~ ~ trapped_chest run return run tag @s remove searching
 
-data remove storage sr:tmp lootchest_infos
+data remove storage sr:tmp lootchest_info
 execute unless data block ~ ~ ~ Items[{components:{"minecraft:custom_data":{is_looting:1b}}}].Slot run return run tag @s remove searching
 data modify storage sr:tmp lootchest_info.slot set from block ~ ~ ~ Items[{components:{"minecraft:custom_data":{is_looting:1b}}}].Slot
 execute store result storage sr:tmp lootchest_info.slot int 1 run data get storage sr:tmp lootchest_info.slot

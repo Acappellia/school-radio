@@ -1,24 +1,23 @@
+# Gamerules
 
-#TODO remove debug info
-gamerule doWeatherCycle false
-gamerule doFireTick false
-gamerule doMobSpawning false
-gamerule commandBlockOutput false
+#gamerule doWeatherCycle false
+#gamerule doFireTick false
+#gamerule doMobSpawning false
+#gamerule commandBlockOutput false
 #gamerule sendCommandFeedback false
-gamerule announceAdvancements false
-gamerule mobGriefing false
-gamerule disableRaids true
-gamerule doEntityDrops false
-gamerule doInsomnia false
-gamerule doMobLoot false
-gamerule doPatrolSpawning false
-gamerule doTraderSpawning false
-gamerule doWardenSpawning false
-gamerule doVinesSpread false
-gamerule naturalRegeneration false
-gamerule tntExplodes false
-#amerule reducedDebugInfo true
-gamerule locatorBar false
+#gamerule announceAdvancements false
+#gamerule mobGriefing false
+#gamerule disableRaids true
+#gamerule doEntityDrops false
+#gamerule doInsomnia false
+#gamerule doMobLoot false
+#gamerule doPatrolSpawning false
+#gamerule doTraderSpawning false
+#gamerule doWardenSpawning false
+#gamerule doVinesSpread false
+#gamerule naturalRegeneration false
+#gamerule tntExplodes false
+#gamerule reducedDebugInfo true
 
 scoreboard objectives add sr dummy
 
@@ -39,60 +38,10 @@ scoreboard objectives add p_search_x dummy
 scoreboard objectives add p_search_y dummy
 scoreboard objectives add p_search_z dummy
 scoreboard objectives add p_search_rotation dummy
-scoreboard objectives add p_input_cd custom:time_since_death
-scoreboard objectives add p_tuning_checktime dummy
-scoreboard objectives add p_tuning_sound_interval custom:time_since_death
-scoreboard objectives add p_fire_cd custom:time_since_death
-scoreboard objectives add p_ammo_ingun dummy
-scoreboard objectives add p_recoil_time custom:time_since_death
-scoreboard objectives add p_recoil_type dummy
-scoreboard objectives add p_reload_shotgun dummy
-scoreboard objectives add p_bammo_shotgun dummy
-scoreboard objectives add p_shotgun_bolt custom:time_since_death
-scoreboard objectives add p_weight dummy
-scoreboard objectives add p_die deathCount
-scoreboard objectives add p_tp_cd dummy
-
-scoreboard objectives add p_checkdie custom:time_since_death
 
 scoreboard objectives add p_inv_sound_cd custom:time_since_death
-
-scoreboard objectives add p_ability_movement_xp dummy
-scoreboard objectives add p_ability_movement_level dummy
-scoreboard objectives add p_ability_carry_xp dummy
-scoreboard objectives add p_ability_carry_level dummy
-scoreboard objectives add p_ability_search_xp dummy
 scoreboard objectives add p_ability_search_level dummy
-
-scoreboard objectives add p_move_walk custom:walk_one_cm
-scoreboard objectives add p_move_sprint custom:sprint_one_cm
-scoreboard objectives add p_move_sneak custom:crouch_one_cm
-scoreboard objectives add p_move_stat dummy
-
-scoreboard objectives add p_death_penalty dummy
-
-scoreboard objectives add p_camera_prepare custom:time_since_death
-scoreboard objectives add p_dialogue_prepare custom:time_since_death
 
 fill -1 -64 -1 1 -62 1 bedrock
 
-forceload add -180 -157 -50 -50
-forceload add 0 0 0 0
-
-worldborder set 2000
-
 schedule function sr:3gt_tick 3t append
-
-#team add mob_friend
-#team modify mob_friend collisionRule always
-
-team add in_safehouse
-team modify in_safehouse collisionRule always
-team modify in_safehouse friendlyFire false
-team modify in_safehouse nametagVisibility always
-
-function ps:animation/init
-function sr:camera/init
-function sr:dialogue/init
-
-execute as @e[type=item_display] run data modify entity @s view_range set value 0.6

@@ -1,1 +1,0 @@
-$advancement grant @s only sr:abilities/$(type)_$(level) $(xp)

@@ -1,7 +1,0 @@
-execute if score #nagi_night_ani sr matches 0 run title @s actionbar [{text:"nagi 依旧看着窗外…… 还是不要打扰她了",color:"gray"}]
-execute if score #nagi_night_ani sr matches 1 run title @s actionbar [{text:"nagi 在椅子上前后摇摆，看起来很开心的样子",color:"gray"}]
-execute if score #nagi_night_ani sr matches 2 run title @s actionbar [{text:"nagi 坐在椅子上发着呆",color:"gray"}]
-execute if score #nagi_night_ani sr matches 3 run title @s actionbar [{text:"nagi 坐在讲台上，一副很乖巧的样子",color:"gray"}]
-execute if score #nagi_night_ani sr matches 4 run title @s actionbar [{text:"nagi 出神的看着黑板上的挂钟 ",color:"gray"}]
-execute if score #nagi_night_ani sr matches 5 run title @s actionbar [{text:"nagi 倒着挂在柜子上……真的没问题吗……",color:"gray"}]
-execute if score #nagi_night_ani sr matches 6 run title @s actionbar [{text:"nagi 睡着了",color:"gray"}]

@@ -1,1 +1,0 @@
-$playsound $(type) player @a ^$(pos_left) ^$(pos_up) ^$(pos_front) $(volume) $(pitch)
