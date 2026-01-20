@@ -1,4 +1,4 @@
-execute store result score #invalid_pickup sr run clear @s copper_ingot[custom_data~{is_looting:1b}] 0
+execute store result score #invalid_pickup sr run clear @s [custom_data~{is_looting:1b}] 0
 execute if score #invalid_pickup sr matches 1.. run function sr:loot/return_item
 
 execute if score @s p_search_tick matches 3.. unless score @s p_search_rotation matches -2147483648..2147483647 store result score @s p_search_rotation run data get entity @s Rotation[0]

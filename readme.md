@@ -1,18 +1,49 @@
-单独的摸金模块
+## 简介
 
-## 创建箱子
+一个单独的摸金模块，配合资源包使用可实现类似于部分搜打撤游戏中的摸金效果，欢迎随意引用修改
+地图《NAGI》中的示例：https://www.bilibili.com/video/BV163etzEEGJ/
 
-如下指令可在地图里添加不同种类的容器：
-/function sr:add_chest/dlong
-/function sr:add_chest/laji
-/function sr:add_chest/long
-/function sr:add_chest/music
-/function sr:add_chest/paper
-/function sr:add_chest/safe_locked
-/function sr:add_chest/safe
-/function sr:add_chest/short
-/function sr:add_chest/tool
+本仓库只包含数据包部分，不包括资源包
 
-## 创建战利品表
+本模块对应的游戏版本为1.21.8
+核心代码可以支持更多版本，但需要对引用的Bookshelf raycast库进行更换：https://mcbookshelf.dev/
 
-在 `/data/sr/loot_table` 下修改每种容器产出的战利品类别，并在 `/data/sr/loot_table/loots` 下定义不同的类别，详见已有的示例
+## 功能
+
+打开数据包创建的特殊容器，容器内会刷新出可自定义的战利品，且战利品会随着搜索缓慢出现
+
+- `sr:loot_item` 战利品表定义了尚未搜索的未知物品（可修改物品贴图）
+- `sr:change_name` 的物品修改器定义了搜索中的物品特效（可通过物品贴图修改搜索动画）
+
+可以定义不同的容器并在游戏内创建。容器可配置项包括：
+
+- 单独的战利品表
+- 单独的模型外观（需要在资源包中把陷阱箱的贴图擦除）
+- 搜刮前后的模型差分
+- 是否需要钥匙打开（背包内有钥匙物品即可打开）
+
+创建的特殊容器在被第一次打开后，将会在一定的冷却时间后随机刷新，刷新冷却在 `data/sr/function/refresh/refresh_loots.mcfunction` 中设置
+
+## 容器的定义与容器实例的创建
+
+该模块预设了一部分容器，如果要添加新的容器，可参考已有的容器进行调整。新增容器需要在以下位置进行修改：
+
+- 在 `/data/sr/function/add_chest/` 目录下参照已有的内容新建一个容器的**创建函数**，并修改容器的**标签**、**关闭状态模型**，以及对应的**初始战利品表**；
+- 在 `/data/sr/loot_table/chest/` 目录下参照已有内容新建一个**初始战利品表**，里面仅定义容器内可能出现的**物品数量**；
+- 在 `/data/sr/function/loot/chest_replace_loot_check_type.mcfunction` 文件中参照已有的内容新建一行，用于关联容器和**替换战利品表**；
+- 在 `/data/sr/loot_table/` 目录下参照已有内容新建一个**替换战利品表**，里面定义对应容器能够搜出的**实际战利品内容**，可以引用其他的战利品表；
+- 在 `/data/sr/function/loot/update_model.mcfunction` 文件中参照已有的内容新建一行，用于定义容器的**开启状态模型**（可省略）；
+- 在 `/data/sr/function/refresh/chest_reset_self.mcfunction` 文件中参照已有的内容新建一行，用于容器的**自动刷新**判断。
+
+在地图中，执行容器的**创建函数**，即可在当前位置创建对应容器的一个实例。如果需要销毁容器实例，删除地图中对应的陷阱箱和展示实体即可。
+
+## 一些特殊tag
+
+物品的 `minecraft:custom_data` 组件：
+- `is_looting` 用于标记未被搜出和正在搜索的物品
+- `is_key` 用于标记钥匙物品
+
+实体 tag：
+- `new_loot` 在展示实体上，用于标记未被搜索的容器
+- `lootable` 在展示实体上，用于标记可搜索容器
+- `chest_lock` 在交互实体上，用于标记箱子锁
