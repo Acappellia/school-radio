@@ -44,6 +44,7 @@ scoreboard objectives add p_ability_search_level dummy
 
 scoreboard objectives add chest_loottime dummy
 
+forceload add 0 0
 fill -1 -64 -1 1 -62 1 bedrock
 
 schedule function sr:3gt_tick 3t append

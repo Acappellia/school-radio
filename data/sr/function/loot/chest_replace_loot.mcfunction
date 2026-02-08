@@ -1,6 +1,6 @@
 setblock 0 -64 0 shulker_box
 
-execute as @n[distance=..0.1,tag=lootable,type=item_display] run function sr:loot/chest_replace_loot_check_type
+execute positioned ~ ~0.5 ~ as @n[distance=..0.1,tag=lootable,type=item_display] run function sr:loot/chest_replace_loot_check_type
 
 $item replace block ~ ~ ~ container.$(slot) from block 0 -64 0 container.0
 setblock 0 -64 0 bedrock
