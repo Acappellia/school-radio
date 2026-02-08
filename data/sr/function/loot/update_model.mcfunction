@@ -8,5 +8,5 @@ execute if entity @s[tag=safe_locked] run data modify entity @s item.components.
 execute if entity @s[tag=short] run data modify entity @s item.components."minecraft:item_model" set value "minecraft:chest_short_o"
 execute if entity @s[tag=tool] run data modify entity @s item.components."minecraft:item_model" set value "minecraft:chest_tool_o"
 
-execute as @s[tag=new_loot] store result score @s chest_loottime run time query gametime
-tag @s remove new_loot
+execute as @s[tag=untouched] store result score @s chest_loottime run time query gametime
+tag @s remove untouched
