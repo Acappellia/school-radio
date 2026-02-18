@@ -2,4 +2,4 @@
 # CAUTION no multiverse support
 execute store result score #chest_refresh_time chest_loottime run time query gametime
 scoreboard players remove #chest_refresh_time chest_loottime 36000
-execute at @a as @e[distance=16..64,sort=random,limit=1,type=item_display,tag=lootable,tag=!untouched] if score @s chest_loottime < #chest_refresh_time chest_loottime at @s run function sr:refresh/chest_reset_self
+execute as @e[sort=random,limit=10,type=item_display,tag=lootable,tag=!untouched] unless entity @a[distance=..16] if score @s chest_loottime < #chest_refresh_time chest_loottime at @s run function sr:refresh/chest_reset_self

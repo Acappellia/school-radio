@@ -10,3 +10,5 @@ execute if entity @s[tag=tool] run data modify entity @s item.components."minecr
 
 execute as @s[tag=untouched] store result score @s chest_loottime run time query gametime
 tag @s remove untouched
+
+execute at @s run kill @e[type=item_display,tag=lootable,distance=..0.1,tag=untouched]

@@ -11,4 +11,4 @@ execute if entity @s[tag=safe_locked] run function sr:add_chest/safe_locked
 execute if entity @s[tag=short] run function sr:add_chest/short
 execute if entity @s[tag=tool] run function sr:add_chest/tool
 
-kill @e[type=item_display,tag=lootable,distance=..0.1]
+kill @s
